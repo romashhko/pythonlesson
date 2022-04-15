@@ -1,13 +1,63 @@
-from random import Random, random
 from cat import Cat
 
 
-Tom = Cat('Tom', 'red', 25, 9)
+your_cat = Cat('Димок', 'Сірий', 25, 9)
+
+print('Привіт, це гра про котика.')
 
 
-Tom.about()
-Tom.HB()
-Tom.feed()
-Tom.run()
-Tom.sleep()
-Tom.get_up()
+name = input('Дай ім`я своєму котику: ')
+color = input('Вибери колір шерсті котика: ')
+
+
+print('Що ти зараз хочеш робити? ')
+user_action = input('їсти, бігати, спати, прокинутись, дізнатись про кота ?: ')
+
+if user_action == 'їсти':
+   your_cat.feed()
+
+elif user_action == 'бігати':
+    your_cat.run()
+
+if user_action == 'спати':
+   your_cat.sleep()
+
+elif user_action == 'дізнатись про кота':
+    your_cat.about()
+
+if user_action == 'прокинутись':
+   your_cat.get_up()
+
+user_action = input('Що далі будемо робити ?: ')
+
+if user_action == 'їсти':
+   your_cat.feed()
+
+elif user_action == 'бігати':
+    your_cat.run()
+
+if user_action == 'спати':
+   your_cat.sleep()
+
+elif user_action == 'дізнатись про кота':
+    your_cat.about()
+
+if user_action == 'прокинутись':
+   your_cat.get_up()
+
+user_action = input('Що далі будемо робити ?: ')
+
+if user_action == 'їсти':
+   your_cat.feed()
+
+elif user_action == 'бігати':
+    your_cat.run()
+
+if user_action == 'спати':
+   your_cat.sleep()
+
+elif user_action == 'дізнатись про кота':
+    your_cat.about()
+
+if user_action == 'прокинутись':
+   your_cat.get_up()
